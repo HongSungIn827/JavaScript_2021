@@ -6,15 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-    
 <body>
   <script>
-    const a = Number(prompt('숫자를 입력해주세요,',''))
-    if (a%2==0) {
-      alert('입력한 숫자는 짝수 입니다')
-    } else if (a%2==1) {
-      alert('입력한 숫자는 홀수 입니다')
+    var total = 0
+    for (let i = 1; i < 101; i++) {
+      if (i%3==0) {
+        total+=i
+      }  
     }
+    console.log(total)
   </script>
+
+
+  
+  
 </body>
 </html>

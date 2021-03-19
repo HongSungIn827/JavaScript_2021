@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="aa.jpg" alt="">
+  <script>
+    var img = document.body.getElementsByTagName('img')[0]
+    const rawInput = prompt('태어난 해를 입력하세요.','')
+    const year = Number(rawInput)
+    const e = Number(year%12)
+    // alert(e);
+
+    let 간
+    switch (true) {
+      case year%10==0:
+        console.log('경')
+        간 = '경'
+        break;
+      case year%10==1:
+        console.log('신')
+        간 = '신'
+        break; 
+      case year%10==2:
+        console.log('임')
+        간 = '임'
+        break;
+      case year%10==3:
+        console.log('계')
+        간 = '계'
+        break;
+      case year%10==4:
+        console.log('갑')
+        간 = '갑'
+        break;
+      case year%10==5:
+        console.log('을')
+        간 = '을'
+        break;
+      case year%10==6:
+        console.log('병')
+        간 = '병'
+        break;
+      case year%10==7:
+        console.log('정')
+        간 = '정'
+        break;
+      case year%10==8:
+        console.log('무')
+        간 = '무'
+        break;
+      case year%10==9:
+        console.log('기')
+        간 = '기'
+        break;  
+      default:
+        break;
+    }
+
+    let 띠
+    if (e===0) {
+      띠 = '신'
+      img.src = "원숭이.png"
+    }
+    else if (e===1) {
+      띠 = '유'
+      img.src = "닭.png"
+    }
+    else if (e===2) {
+      띠 = '술'
+      img.src = "개.png"
+    }
+    else if (e===3) {
+      띠 = '애'
+      img.src = "돼지.png"
+    }
+    else if (e===4) {
+      띠 = '자'
+      img.src = "쥐.png"
+    }
+    else if (e===5) {
+      띠 = '축'
+      img.src = "소.png"
+    }
+    else if (e===6) {
+      띠 = '인'
+      img.src = "호랑이.png"
+    }
+    else if (e===7) {
+      띠 = '묘'
+      img.src = "토끼.png"
+    }
+    else if (e===8) {
+      띠 = '진'
+      img.src = "용.png"
+    }
+    else if (e===9) {
+      띠 = '사'
+      img.src = "뱀.png"
+    }
+    else if (e===10) {
+      띠 = '오'
+      img.src = "말.png"
+    }
+    else if (e===11) {
+      띠 = '미'
+      img.src = "양.png"
+    }
+    // 띠 = '신,유,술,애,자,축,인,묘,진,사,오,미'.split(',')
+    // img.src = "토끼.png"
+
+    alert(`${year}년은 ${간}${띠} 년입니다.`)
+  </script>
+</body>
+</html>

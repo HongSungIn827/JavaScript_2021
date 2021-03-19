@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let array = [1,2,3,4]
+    console.log("길이"+array.length)
+    array.push(5)
+    console.log("길이"+array.length)
+    console.log("0번째"+array[0])
+    console.log("1번째"+array[1])
+    console.log("2번째"+array[2])
+    console.log("3번째"+array[3])
+    console.log("4번째"+array[4])
+
+    array[10]="Seize the day!"
+    console.log(array)
+
+    array[7] = "Carpediem"
+    console.log(array)
+
+    // array.splice(7,1) // 7번째에 있는 것 1개 제거하기
+    // console.log(array)
+
+    array[7] = [9,10]
+    console.log(array)
+
+    array.splice(7,2) // 7번째에 있는 것 1개 제거하기
+    console.log(array)
+
+    //  특정값 제거하기
+    const index = array.indexOf("Seize the day!")
+    array.splice(index,1)
+    console.log(array)
+
+    array.splice(1,0,"3.5") // 1번째에 3.5를 추가
+    console.log(array)
+
+    array.splice(1,0,"3.5") // 1번째에 3.5를 추가
+    console.log(array)
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

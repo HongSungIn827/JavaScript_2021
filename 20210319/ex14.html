@@ -6,15 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-    
 <body>
   <script>
-    const a = Number(prompt('숫자를 입력해주세요,',''))
-    if (a%2==0) {
-      alert('입력한 숫자는 짝수 입니다')
-    } else if (a%2==1) {
-      alert('입력한 숫자는 홀수 입니다')
-    }
+    const time = prompt('시간?(초단위로입력)')
+    console.log(`${parseInt(time/60)}분 ${time%60}초`)
   </script>
 </body>
 </html>
